@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
 import Curriculo from './components/Curriculo/Curriculo';
 import Projects from './components/Projects/Projects';
+import Contato from './components/Contato/Contato';
+
 
 import { Switch, Route } from 'react-router-dom';
 
@@ -35,16 +37,12 @@ function App() {
 
           <Header/>
 
+          <Contato/>
+
           <Footer/>
         </Route>
       </Switch>
 
-      {/* <Header></Header>
-      
-      <Curriculo></Curriculo>
-      <Projects></Projects>
-
-      <Footer></Footer> */}
     </>
   )
 }
