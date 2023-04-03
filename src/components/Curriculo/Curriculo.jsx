@@ -13,7 +13,7 @@ function Curriculo() {
         <main>
             <div id="container">
                 <img src={renanAvatar} alt='foto de Renan' />
-                <aside>Oláaaaaa, Me chamo Renan, Sou um desenvolvedor em crescimento, Tenho 20 anos e atualmente estudo
+                <aside>Olá, Me chamo Renan, Sou um desenvolvedor em crescimento, Tenho 20 anos e atualmente estudo
                     programação por conta propria almejando ser um
                     desenvolverdor Back End, Demasiadamente focado para estudar e absorver conhecimento.</aside>
             </div>
