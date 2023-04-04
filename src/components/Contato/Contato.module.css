@@ -473,6 +473,10 @@
         padding: 15px;
     }
 
+    .form{
+        width: 80%;
+    }
+
     .footer {
         margin-top: 5%;
         align-items: center;

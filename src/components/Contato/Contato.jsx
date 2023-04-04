@@ -1,28 +1,30 @@
 import React from 'react';
 import styles from './Contato.module.css'
 
-
-
 function Contato() {
+
+
+
+
     return (
         <main className={styles.mainContato}>
             <div id={styles.contato}>
                 <form action="">
 
                     <fieldset>
-                        <input id={styles.nome} type="text" name="input-nome" className={styles['form-control']} placeholder="Nome" required minLength="2" />
+                        <input id={styles.nome} type="text" name="input-nome" className='form-control' placeholder="Nome" required minLength="2" />
                     </fieldset>
 
                     <fieldset>
-                        <input id={styles.email} type="email" name="input-email" className={styles['form-control']} placeholder="Email" required />
+                        <input id={styles.email} type="email" name="input-email" className='form-control' placeholder="Email" required />
                     </fieldset>
 
                     <fieldset>
-                        <input id={styles.telefone} type="tel" name="input-tel" className={styles['form-control']} placeholder="(99) 99999-9999" required pattern="^\(\d{2}\) \d{5}-\d{4}$" maxLength="15" />
+                        <input id={styles.telefone} type="tel" name="input-tel" className='form-control' placeholder="(99) 99999-9999" required pattern="^\(\d{2}\) \d{5}-\d{4}$" maxLength="15" />
                     </fieldset>
 
                     <fieldset>
-                        <textarea id={styles.mensagem} name="input-msg" className={styles['form-control']} placeholder="Mensagem"
+                        <textarea id={styles.mensagem} name="input-msg" className='form-control' placeholder="Mensagem"
                             style={{height: '100px'}}></textarea>
                     </fieldset>
 

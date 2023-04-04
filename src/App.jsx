@@ -7,6 +7,7 @@ import Footer from './components/Footer/Footer';
 import Curriculo from './components/Curriculo/Curriculo';
 import Projects from './components/Projects/Projects';
 import Contato from './components/Contato/Contato';
+import Contador from './components/Teste/Contador';
 
 
 import { Switch, Route } from 'react-router-dom';
@@ -16,6 +17,9 @@ function App() {
   return (
     <>
       <Switch>
+        <Route exact path='/teste'>
+            <Contador />
+        </Route>
         <Route exact path='/'>
           <Header />
 
