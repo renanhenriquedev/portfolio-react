@@ -11,7 +11,46 @@ import styles from './Curriculo.module.css'
 
 
 function Curriculo() {
-    
+
+    const tecnologias = [
+        {
+            image: iconHtml
+        },
+        {
+            image: iconCss
+        },
+        {
+            image: iconJS
+        }
+    ]
+
+    const ferramentas = [
+        {
+            image: iconGitHub
+        },
+        {
+            image: iconLinux
+        },
+        {
+            image: iconGit
+        }
+    ]
+
+    const textos = [
+        {
+            text: 'Graduando em Analise e Desenvolvimento de Sistemas, (Uninter 2025)'
+        },
+        {
+            text: 'Diploma de Lógica de Programação os primeiros programas com Javascript e HTML, (Alura) 2022'
+        },
+        {
+            text: 'Diploma de Foco tranzendo mais resultados para o dia a dia, (Alura) 2022'
+        },
+        {
+            text: 'Diploma de Git e Github controle e compartilhe seu código, (Alura) 2022'
+        }
+    ]
+
     return (
 
         <main className={styles.main}>
@@ -24,24 +63,23 @@ function Curriculo() {
 
             <div id={styles.content}>
                 <p className={styles.titulo}>Curriculo -</p>
-                <p>Graduando em Analise e Desenvolvimento de Sistemas, (Uninter 2025)</p>
-                <p>Diploma de Lógica de Programação os primeiros programas com Javascript e HTML, (Alura) 2022</p>
-                <p>Diploma de Foco tranzendo mais resultados para o dia a dia, (Alura) 2022</p>
-                <p>Diploma de Git e Github controle e compartilhe seu código, (Alura) 2022</p>
+                {textos.map((texto, index) => (
+                    <p key={index}> {texto.text}</p>
+                ))}
             </div>
 
             <div id={styles.tecnologia}>
                 <p className={styles.titulo}>Tecnologias</p>
-                <img className={`${styles.icon} ${styles.img}`} src={iconHtml} />
-                <img className={`${styles.icon} ${styles.img}`} src={iconCss} />
-                <img className={`${styles.icon} ${styles.img}`} src={iconJS} />
+                {tecnologias.map((tecnologia, index) => (
+                    <img key={index} className={`${styles.icon} ${styles.img}`} src={tecnologia.image} />
+                ))}
             </div>
 
             <div id={styles.ferramentas}>
                 <p className={styles.titulo}>Ferramentas</p>
-                <img className={`${styles.icon} ${styles.img}`} src={iconGitHub} />
-                <img className={`${styles.icon} ${styles.img}`} src={iconLinux} />
-                <img className={`${styles.icon} ${styles.img}`} src={iconGit} />
+                {ferramentas.map((ferramenta, index) => (
+                    <img key={index} className={`${styles.icon} ${styles.img}`} src={ferramenta.image} />
+                ))}
             </div>
         </main>
     )
