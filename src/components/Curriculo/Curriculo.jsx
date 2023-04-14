@@ -11,6 +11,7 @@ import styles from './Curriculo.module.css'
 
 
 function Curriculo() {
+    
     return (
 
         <main className={styles.main}>
