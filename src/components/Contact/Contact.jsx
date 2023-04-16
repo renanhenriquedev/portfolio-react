@@ -1,15 +1,15 @@
 import React from 'react';
-import styles from './Contato.module.css'
+import styles from './Contact.module.css'
 
-function Contato() {
+function Contact() {
 
 
 
 
     return (
-        <main className={styles.mainContato}>
-            <div id={styles.contato}>
-                <form action="">
+        <main className={styles.mainContact}>
+            <div id={styles.Contact}>
+                <form  action="">
 
                     <fieldset>
                         <input id={styles.nome} type="text" name="input-nome" className='form-control' placeholder="Nome" required minLength="2" />
@@ -45,4 +45,4 @@ function Contato() {
     )
 }
 
-export default Contato;
+export default Contact;

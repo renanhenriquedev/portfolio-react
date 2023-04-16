@@ -1,0 +1,25 @@
+{
+    "project": [
+        {
+            "link": "https://github.com/renanhenriquedev/Pixel-Art",
+            "image": "https://github.com/renanhenriquedev/portfolio-react/blob/main/src/imagens/pixel-art.png?raw=true",
+            "text": "Projeto com funcionalidades de HTML, CSS e Javascript com o objetivo de simular uma plataforma de pixel art para fazer os seus desenhos.",
+            "github": "https://github.com/renanhenriquedev/Pixel-Art",
+            "deploy": "https: //pixelart-project.surge.sh/"
+        },
+        {
+            "link": "https://github.com/renanhenriquedev/to-do-list",
+            "image": "https://github.com/renanhenriquedev/portfolio-react/blob/main/src/imagens/list.png?raw=true",
+            "text": "Projeto com funcionalidades de HTML, CSS e Javascript com o objetivo de simular uma plataforma de lista de tarefas para o dia a dia.",
+            "github": "https://github.com/renanhenriquedev/to-do-list",
+            "deploy": "https: //list-project.surge.sh/"
+        },
+        {
+            "link": "https://github.com/renanhenriquedev/hamburger-shop",
+            "image": "https://github.com/renanhenriquedev/portfolio-react/blob/main/src/imagens/burguer.png?raw=true ",
+            "text": "Projeto com funcionalidades de HTML e CSS com o objeito de simular um site de uma hamburgueria local.",
+            "github": "https://github.com/renanhenriquedev/hamburger-shop'",
+            "deploy": "https: //burguer-project.surge.sh/"
+        }
+    ]
+}

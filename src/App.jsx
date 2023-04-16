@@ -4,9 +4,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
-import Curriculo from './components/Curriculo/Curriculo';
+import Curriculum from './components/Curriculum/Curriculum';
 import Projects from './components/Projects/Projects';
-import Contato from './components/Contato/Contato';
+import Contact from './components/Contact/Contact';
 import Contador from './components/Teste/Contador';
 
 
@@ -23,7 +23,7 @@ function App() {
         <Route exact path='/'>
           <Header />
 
-          <Curriculo />
+          <Curriculum />
 
           <Footer />
         </Route>
@@ -41,7 +41,7 @@ function App() {
 
           <Header/>
 
-          <Contato/>
+          <Contact/>
 
           <Footer/>
         </Route>
