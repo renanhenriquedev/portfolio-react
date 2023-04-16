@@ -1,22 +1,52 @@
 import React, { useState } from 'react';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
-import Curriculo from './components/Curriculo/Curriculo';
+import Curriculum from './components/Curriculum/Curriculum';
 import Projects from './components/Projects/Projects';
+import Contact from './components/Contact/Contact';
+import Contador from './components/Teste/Contador';
+
+
+import { Switch, Route } from 'react-router-dom';
 
 function App() {
 
   return (
     <>
-      <Header></Header>
-      
-      <Curriculo></Curriculo>
-      <Projects></Projects>
+      <Switch>
+        <Route exact path='/teste'>
+            <Contador />
+        </Route>
+        <Route exact path='/'>
+          <Header />
 
-      <Footer></Footer>
+          <Curriculum />
+
+          <Footer />
+        </Route>
+
+        <Route exact path='/projects' >
+          <Header/>
+
+          <Projects/>
+
+          <Footer/>
+
+        </Route>
+
+        <Route exact path='/contact'>
+
+          <Header/>
+
+          <Contact/>
+
+          <Footer/>
+        </Route>
+      </Switch>
+
     </>
   )
 }
